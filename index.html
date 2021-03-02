@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--animation Library-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="/asset/css/styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <!----navbar---->
+
+      <div class="navbar">
+        <nav>
+          <label class="logo">
+            <a href="#"> <b> A</b>BDO</a></label
+          >
+
+          <ul>
+            <li><a href="#aboutme"> about</a></li>
+            <li><a href="#myskills"> skills</a></li>
+            <li><a href="#myprojects"> my projetcs</a></li>
+            <li><a href="#contactme"> Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <!----welcome text--->
+
+      <div class="welcome_text">
+        <div class="text">
+          <p class="hellod animate__animated animate__flash animate__repeat-2">
+            Hello !
+          </p>
+          <p class="description" id="hello">
+            I'm a Moroccan <span> Front-end Developer</span> &
+            <span> Graphic Designer.</span>
+          </p>
+          <button class="button animate__animated animate__bounceInUp">
+            <a href="#myprojects"> See my work</a>
+          </button>
+        </div>
+      </div>
+
+      <!----who i'm---->
+
+      <div class="who_i_am_text">
+        <p class="whoiam" id="aboutme">WHO I'M</p>
+
+        <img src="/asset/img/profil.png" alt="abdelhamid lahbouch" />
+        <p class="lead">Graphic Designer & Front-end Developer</p>
+        <p class="para animate__animated animate__backInUp">
+          I’m a Front-End Developer located in Morocco. I have a serious passion
+          for UI effects, animations and creating intuitive, dynamic user
+          experiences.
+          <br />
+          <b>Well-organised person</b>, <b>problem solver</b> with high
+          attention to detail. <br />
+          Fan of Pubg, outdoor activities, TV series and English Movies. <br />
+          Interested in the entire frontend spectrum and working on ambitious
+          projects with positive people. <br />
+        </p>
+      </div>
+
+      <!----skills---->
+
+      <div class="skills" id="myskills">
+        <p class="skillshead">MY SKILLS</p>
+
+        <p>HTML</p>
+        <div class="skillsbar">
+          <div class="skillss html">90%</div>
+        </div>
+
+        <p>CSS</p>
+        <div class="skillsbar">
+          <div class="skillss css">80%</div>
+        </div>
+
+        <p>JavaScript</p>
+        <div class="skillsbar">
+          <div class="skillss js">65%</div>
+        </div>
+      </div>
+
+      <!----my projetcs---->
+
+      <div class="my_projects" id="myprojects">
+        <p class="projecthead">MY&nbsp;PROJECTS</p>
+
+        <div class="projet1">
+          <a
+            href="https://drive.google.com/drive/folders/1lTM2dPd1ShAM_clbEvPYG9QlbZUj7zGZ?usp=sharing"
+          >
+            Vocal company mock up
+            <img src="/asset/img/p1.png" alt="" />
+          </a>
+        </div>
+        <div class="projet2">
+          <a href="http://www.solicode.Co">
+            Logo
+            <img src="/asset/img/p2.png" alt="" />
+          </a>
+        </div>
+        <div class="projet3">
+          <a
+            href="https://drive.google.com/drive/folders/1mWHZHNFaUb601_muEr0gdyibVgoVLsjr?usp=sharing"
+          >
+            Scratch game
+            <img src="/asset/img/p3.jpg" alt="" />
+          </a>
+        </div>
+        <div class="projet4">
+          <a
+            href="https://drive.google.com/drive/folders/1m_jqYszVHnOPIZl349kD1aT0dT204nz1?usp=sharing"
+          >
+            Html form <img src="/asset/img/p4.png" alt="" />
+          </a>
+        </div>
+      </div>
+
+      <!----footer---->
+
+      <div class="footer" id="contactme">
+        <p>Do&nbsp;you&nbsp;like&nbsp;what&nbsp;you&nbsp;see?</p>
+        <p>Need <span id="typing"></span>?</p>
+
+        <button>
+          <a href="mailto:abdelhamid.lahbouch.solicode@gmail.com">
+            Contact me</a
+          >
+        </button>
+      </div>
+    </div>
+
+    <!--animation javaScript-->>
+
+    <script src="/asset/js/typed.js"></script>
+    <script>
+      var typed = new Typed("#typing", {
+        strings: ["Front-end Developer.", "Graphic Design."],
+        typeSpeed: 50,
+        backSpeed: 50,
+        loop: true,
+      });
+    </script>
+  </body>
+</html>

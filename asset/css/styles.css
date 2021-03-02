@@ -1,0 +1,314 @@
+    /*---- fonts----*/
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+/*----styles----*/
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'Montserrat', sans-serif;
+        text-decoration: none;
+    }
+    .container{
+        
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 0.1fr 1fr 1fr  auto;
+        background-color: #101820FF;
+        grid-template-areas:
+        "nav nav nav nav"
+        "welcometext welcometext welcometext welcometext"
+        "whoim whoim whoim whoim"
+        "skills skills skills skills"
+        "myp myp myp myp"
+        "footer footer footer footer"
+        ;
+    }
+
+    /* ----navbar- style---*/
+
+    .navbar{
+        background-color:#101820FF;
+        grid-area: nav;
+      
+        box-shadow:  #FEE715FF 0px 10px 10px -10px;
+        z-index: 1;
+    }
+    ul li a{
+        text-decoration: none;
+        color:white;
+        font-family: 'Montserrat', sans-serif;
+        text-transform: capitalize;
+
+    }
+
+    li{
+        display: inline-block;
+        margin: 30px;
+    }
+    ul{
+        float: right;
+        list-style: none;
+        margin-right: 80px;
+
+    }
+    label.logo {
+    padding: 0 100px;
+        line-height: 80px;
+    }
+    label.logo a:hover{
+        color: white;
+    }
+    label.logo a{
+        color: white;
+        font-size: 25px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        color: #FEE715FF;
+        text-underline-position: under;
+        text-underline-offset: 3px;
+
+
+    }
+    a:hover{
+        color:   #FEE715FF;
+        text-decoration:underline;
+        text-underline-offset: 15px;
+    }
+
+    /* ----welcome text style---*/
+
+    .welcome_text{
+        box-shadow:  black 0px 10px 10px -10px;
+        z-index: 1;
+        height: 90vh;
+        grid-area: welcometext;
+    text-align: center;
+    line-height: 60px;
+    font-size: 55px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-justify: center;
+    display: flex;
+    flex-direction: column;
+        justify-content: center;
+        align-self: center;
+        font-weight: normal;
+    background-color:#101820FF;
+    
+;}
+    span{
+        font-weight: bolder;
+        color:#FEE715FF ;
+        font: size 60px; 
+        font-family: 'Montserrat', sans-serif;
+    }
+    .hellod{
+        font-size: 100px;
+        font-weight: bold;
+        margin-bottom: 60px;
+    }
+    button{
+        padding: 20px;
+        width: 200px;
+        margin-top: 50px;
+        background-color: #FEE715FF ;
+        border: 0;
+        border-radius: 30px;
+        font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    }
+    button a{
+    text-decoration: none;
+    color: black;
+    }
+    button:hover 
+    {
+        background-color: burlywood;
+    }
+    button a:hover{
+        color: black;
+    }
+    .description{
+        font-size: 40px;
+    }
+
+
+    /* ----who i'm style---*/
+
+    .who_i_am_text{
+        height: 100vh;
+        background-color: white;
+        grid-area: whoim;
+        margin-bottom: 50px;
+
+        
+    text-transform: uppercase;
+    margin-right: 75px;
+    text-align: center;
+    }
+    .whoiam{
+        margin-left: 70px;
+        margin-top: 30px;
+        font-size: 25px;
+        color: #101820FF;
+        text-decoration: underline;
+        text-underline-offset: 15px;
+        font-weight: bolder;
+    }
+    .lead{
+     font-size: 35px;
+        font-weight: bolder;
+    }
+    .para{
+        font-size: 20px;
+        line-height: 55px;
+    }
+    
+    .who_i_am_text>img{ height: 220px; width: auto; border: 2px solid #FEE715FF; border-radius: 100%; padding: 10px; margin-top: 30px; margin-bottom: 2rem; margin-left: 75px; }
+  
+    /* ----skills style---*/
+
+    .skills{
+        background-color: #101820FF;
+        grid-area: skills;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        height: 70vh;
+        flex-wrap: wrap;
+        color: white;
+
+
+    }
+    .skills>p{
+        padding: 20px;
+    }
+    .skillsbar {
+        width: 50%;
+      }
+      
+      .skillss {
+        text-align: right;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        color: white;
+        
+      }
+      .skills>.skillshead{
+        margin-left: 70px;
+        font-size: 25px;
+        margin-right: 90px;
+        color: #FEE715FF;
+        text-decoration: underline;
+        text-underline-offset: 15px;
+        font-weight: bolder;
+      }
+      .html {width: 90%; background-color: #FEE715FF;}
+      .css {width: 80%; background-color: #FEE715FF;}
+      .js {width: 65%; background-color: #FEE715FF;}
+    
+
+    /* ----my project style----*/
+    
+
+    .my_projects{
+        grid-area: myp;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: auto;
+        flex-wrap: wrap;
+        text-align: center;
+        align-items: center;
+        
+    }
+    .projecthead{
+        padding: 50px;
+        margin-left: 70px;
+            font-size: 25px;
+            margin-right: 90px;
+            color: black;
+            text-decoration: underline;
+            text-underline-offset: 15px;
+            font-weight: bolder;
+            justify-content: center;
+    }
+    .projet1{
+        margin: 60px;
+        width: 300px;
+        font-size: 20px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;  }
+    .projet2{
+        margin: 60px;
+        width: 300px;
+        font-size: 20px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+    .projet3{
+        margin: 60px;
+        width: 300px;
+        font-size: 20px;
+        height: 282px;
+
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;   }
+    .projet4{
+        margin: 60px;
+        width: 300px;
+        font-size: 20px;
+        height: 282px;
+
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;   }
+    
+    
+  
+
+
+    /* ----footer style--*/
+
+    .footer{    
+
+        background-color: #101820FF;
+        grid-area: footer;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        font-size: 25px;
+        color: white;
+        padding: 90px;
+
+    }
+ #typing{
+
+        color: white;
+        
+    }
+
+
+    /* ----media quary---*/
+    @media only screen and (max-width:991px){
+        ul li{
+            display: none;
+    }
+    nav{
+        text-align: center;
+    }
+    .description{
+        font-size: 25px;
+    }
+    .lead{
+        font-size: 15px;
+           font-weight: bolder;
+           margin-left: 60px;
+
+       }
+       .para{
+           margin-left: 60px;
+           font-size: 15px;
+           line-height: 25px;
+       }
+    }
